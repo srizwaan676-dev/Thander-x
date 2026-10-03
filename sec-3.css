@@ -1,0 +1,272 @@
+
+html{
+    scroll-behavior:smooth;
+}
+.sec3-div{
+    width: auto;
+    height: 700px;
+      background:
+    radial-gradient(circle at top left, rgba(0,183,255,.18), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(37,99,235,.20), transparent 35%),
+    linear-gradient(135deg,#030712,#081120,#0f172a,#172554);
+}
+
+@media (max-width:480px){
+    .sec3-div{
+        grid-template-columns: 1fr;
+    }
+}
+.count{
+       position: absolute;
+        color: rgb(255, 153, 0);
+          font-size: 18px;
+          font-weight: bold;
+          text-transform:uppercase;
+           padding: 12px 20px;
+           margin-top: -122px;
+           margin-left: 100px;
+        
+}
+
+.box{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    padding-top: 140px;
+        /* border: 2px solid black; */
+}
+.box-1{
+    position: relative;
+    width: 380px;
+    height: 520px;
+    background: rgba(19, 18, 18, 0.658);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.box-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.795),
+        transparent
+    );
+    transform: skewX(-25deg);
+    transition: 0.8s;
+}
+
+.box-1:hover::before{
+    left: 150%;
+}
+
+.box-1:hover{
+    transform: translateY(-8px);
+    box-shadow: 1px 1px 2px rgb(112, 3, 255);
+}
+.boxx{
+     height: 350px;
+    width: 360px;
+    /* background-color: red; */
+      overflow: hidden;    
+        border-radius: 12px;
+    margin: 10px;
+    
+}
+.box-1 img {
+    height: 350px;
+    width: 380px;
+    border-radius: 12px;
+
+    transition: transform 0.6s ease;
+    
+}
+
+.box-1 img:hover {
+    transform: scale(1.1); /* 10% zoom */
+}
+.box-hh{
+    font-size: 20px;
+    font-weight: 100;
+    color:aliceblue;
+    /* border: 2px solid black; */
+    margin: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.box-hr {
+    text-transform: capitalize;
+    width: 320px;
+    height: 40px;
+    
+  
+    color:aliceblue;
+    margin: 21px;
+    padding: 4px;
+    border-top: 1px solid rgb(112, 3, 255);
+    
+}
+.box-1.box-hr.kl{
+justify-content: center;
+margin-left: 23px;
+
+}
+
+/* ==========================
+   Mobile Responsive
+========================== */
+
+@media screen and (max-width:480px){
+
+    /* Navigation */
+
+    ul{
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    a{
+        font-size: 16px;
+    }
+
+    .btn{
+        padding: 10px 16px;
+    }
+
+    /* Hero Section */
+
+    .image-text{
+        top: 40px;
+        left: 15px;
+        font-size: 22px;
+    }
+
+    .image-text p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    /* Section 2 */
+
+    .section2{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .take-1,
+    .take-2{
+        width: 100%;
+        margin: 0;
+    }
+
+    .sub-heading{
+        position: static;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .hi-lo{
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    .hi-lop{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .take-2 img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .btn-2{
+        position: static;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    /* Section 3 */
+
+    .sec3-div{
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .count{
+        position: static;
+        margin: 0 0 25px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .box{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 0;
+    }
+
+    .box-1{
+        width: 100%;
+        height: auto;
+    }
+
+    .boxx{
+        width: calc(100% - 20px);
+        height: 240px;
+        margin: 10px;
+    }
+
+    .box-1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .box-hh{
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    .box-hr{
+        width: calc(100% - 30px);
+        margin: 15px;
+        font-size: 14px;
+    }
+
+}
+#menu {
+    display: none;
+}
+
+#menu.show {
+    display: block;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    #menu {
+        display: flex;
+    }
+
+    #btn-1 {
+        display: none;
+        font-size: 20px;
+    }
+}

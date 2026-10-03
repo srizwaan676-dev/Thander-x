@@ -1,0 +1,182 @@
+/* ===========================
+   TECHNOLOGY SECTION
+=========================== */
+
+.technology{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+    padding:90px 8%;
+    background:#08111f;
+    color:#fff;
+    box-sizing:border-box;
+}
+
+.tech-left{
+    flex:1;
+}
+
+.tech-right{
+    flex:1;
+    text-align:center;
+      box-shadow: 0 5px 5px rgba(235, 232, 232, 0.829);
+      border-radius: 10px;
+      padding-bottom: 30px;
+      margin-top: 240px;
+}
+
+.tech-right img{
+    width:90%;
+    max-width:520px;
+    border-radius:20px;
+    animation:float 3s ease-in-out infinite;
+ 
+}
+
+.sub-title{
+    color:#00d4ff;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.tech-left h2{
+    font-size:48px;
+    margin:20px 0;
+    line-height:1.2;
+}
+
+.tech-left p{
+    font-size:17px;
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+.tech-list{
+    margin-top:40px;
+}
+
+.tech-item{
+    background:#111827;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:18px;
+    transition:.3s;
+    border-left:4px solid #00d4ff;
+}
+
+.tech-item:hover{
+    transform:translateX(8px);
+    background:#1e293b;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:992px){
+
+.technology{
+    flex-direction:column;
+    text-align:center;
+    gap:50px;
+}
+
+.tech-left,
+.tech-right{
+    width:100%;
+}
+
+.tech-left h2{
+    font-size:38px;
+}
+
+.tech-right img{
+    max-width:450px;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.technology{
+    padding:60px 20px;
+    gap:35px;
+}
+
+.sub-title{
+    font-size:13px;
+}
+
+.tech-left h2{
+    font-size:30px;
+}
+
+.tech-left p{
+    font-size:15px;
+}
+
+.tech-item{
+    padding:18px;
+    text-align:left;
+}
+
+.tech-item h3{
+    font-size:18px;
+}
+
+.tech-item p{
+    font-size:14px;
+}
+
+.tech-right img{
+    width:100%;
+    max-width:320px;
+    border-radius:15px;
+}
+.tech-right{
+    margin-top: 100px;
+}
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width:480px){
+
+.technology{
+    padding:50px 15px;
+}
+
+.tech-left h2{
+    font-size:24px;
+}
+
+.tech-left p{
+    font-size:14px;
+}
+
+.tech-item{
+    padding:15px;
+}
+
+.tech-item h3{
+    font-size:16px;
+}
+
+.tech-item p{
+    font-size:13px;
+}
+
+.tech-right img{
+    max-width:280px;
+}
+
+}

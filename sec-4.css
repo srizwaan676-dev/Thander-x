@@ -1,0 +1,242 @@
+.sec4-div {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 8%;
+    background:
+        radial-gradient(circle at top left, rgba(0, 183, 255, .18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(37, 99, 235, .20), transparent 35%),
+        linear-gradient(135deg, #030712, #081120, #0f172a, #172554);
+    color: #fff;
+}
+
+.sec4-div::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: #00d4ff;
+    border-radius: 50%;
+    filter: blur(180px);
+    opacity: .15;
+    top: -180px;
+    left: -120px;
+}
+
+.sec4-div::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #2563eb;
+    border-radius: 50%;
+    filter: blur(180px);
+    opacity: .18;
+    bottom: -150px;
+    right: -100px;
+}
+
+.sec4-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.sec4-box {
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .10);
+    margin-bottom: 10px;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 35px;
+    transition: .4s;
+}
+
+.sec4-box:hover {
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow: 0 20px 50px rgba(0, 183, 255, .25);
+}
+
+.sec4-box i {
+    font-size: 55px;
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.btn-2 {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 16px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #00d4ff, #2563eb);
+    color: #fff;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 183, 255, .35);
+}
+
+.sec4-text {
+    margin-bottom: 40px;
+}
+
+/* ==========================
+   Mobile Responsive
+========================== */
+
+@media (max-width: 480px) {
+    .sec4-div {
+        padding: 60px 5%;
+    }
+
+    .sec4-div::before {
+        width: 200px;
+        height: 200px;
+        filter: blur(120px);
+        top: -80px;
+        left: -60px;
+    }
+
+    .sec4-div::after {
+        width: 180px;
+        height: 180px;
+        filter: blur(120px);
+        bottom: -80px;
+        right: -50px;
+    }
+
+    .sec4-box {
+        padding: 25px 20px;
+        margin-bottom: 15px;
+        border-radius: 16px;
+    }
+
+    .sec4-box i {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .sec4-box:hover {
+        transform: translateY(-5px);
+    }
+
+    .sub-heading {
+        margin-bottom: 60px;
+        font-size: 14px;
+        padding-left: 14px;
+    }
+
+    .sub-heading::before {
+        width: 8px;
+        height: 2px;
+    }
+
+    .btn-2 {
+        margin-top: 30px;
+        padding: 14px 30px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+    .sec4-text {
+        margin-bottom: 30px;
+    }
+
+    .sec4-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .sec4-text p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* ==========================
+   Tablet Responsive
+========================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .sec4-div {
+        padding: 80px 6%;
+    }
+
+    .sec4-div::before {
+        width: 300px;
+        height: 300px;
+        filter: blur(150px);
+        top: -120px;
+        left: -80px;
+    }
+
+    .sec4-div::after {
+        width: 280px;
+        height: 280px;
+        filter: blur(150px);
+        bottom: -100px;
+        right: -60px;
+    }
+
+    .sec4-box {
+        padding: 30px 25px;
+    }
+
+    .sec4-box i {
+        font-size: 48px;
+    }
+
+    .sub-heading {
+        margin-bottom: 40px;
+    }
+
+    .btn-2 {
+        padding: 14px 35px;
+        font-size: 16px;
+    }
+}
+
+/* ==========================
+   Desktop Large Screens
+========================== */
+
+@media (min-width: 1400px) {
+    .sec4-div {
+        padding: 120px 10%;
+    }
+
+    .sec4-div::before {
+        width: 550px;
+        height: 550px;
+        filter: blur(200px);
+        top: -200px;
+        left: -150px;
+    }
+
+    .sec4-div::after {
+        width: 500px;
+        height: 500px;
+        filter: blur(200px);
+        bottom: -180px;
+        right: -120px;
+    }
+
+    .sec4-box {
+        padding: 45px;
+        border-radius: 24px;
+    }
+
+    .sec4-box i {
+        font-size: 65px;
+    }
+
+    .btn-2 {
+        padding: 18px 48px;
+        font-size: 18px;
+    }
+}
